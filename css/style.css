@@ -1,13 +1,35 @@
 /* All CSS Start */
+#header{
+    color:#31A5AC;
+}
+
 .background1{
+    width: 705px;
+    height: 815px;
     background-color: #F8F8F8;
-    
 }
 .background2{
     background-color:#F8F8F8;
-    
+    width: 542px;
+height: 815px;
 }
 
-#header{
-    color:#31A5AC;
+#calculate{
+    text-decoration: none;
+    background: #59A5FF;
+    padding: 14px 57px;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+}
+
+#save{
+    text-decoration: none;
+    color: white;
+    padding: 10px 65px;
+    background: #59A5FF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    font-weight: 700;
 }

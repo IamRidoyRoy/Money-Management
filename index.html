@@ -15,16 +15,16 @@
 
 <body>
     <header>
-        <h1 id="header" class="text-center ">Money Management</h1>
+        <h1 id="header" class="d-flex justify-content-center align-items-center mt-4">Money Management</h1>
     </header>
     <main>
-        <section>
-            <div class="row container-fluid ">
-                <div class="col-8 background1">
+        <section class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-8  background1">
                     <img src="images/Money.jpg" alt="">
                 </div>
-                <div class="col-4 background2 text-center">
-                    <div>
+                <div class="col-12 col-md-4 col-lg-8 ms-5  background2 text-center justify-content-center">
+                    <div class="mt-4">
                         <h5>Income</h5>
                         <p>Income: <input type="text"></p>
                     </div>
@@ -32,15 +32,15 @@
                         <h5>Expenses</h5>
                         <p>Food: <input type="text"></p>
                         <p>Rent: <input type="text"></p>
-                        <p>Clothes: <input type="text"></p>
-                        <button>Calculate</button>
+                        <p>Clothes: <input type="text"></p><br>
+                        <a id="calculate" href="">Calculate</a> <br> <br>
                     </div>
                     <div>
                         <h5>Total Expenses: <span>00</span></h5>
-                        <h5>Balance: <span>00</span></h5>
+                        <h5>Balance: <span>00</span></h5> <br>
                     </div>
                     <div>
-                        <p>Save: <input type="text">% <button>Save</button></p>
+                        <p>Save: <input type="text"> % <a id="save" href="">Save</a></p>
                         <h5>Saving Amount: <span>00</span></h5>
                         <h5>Remaing Balance: <span>00</span></h5>
                     </div>
