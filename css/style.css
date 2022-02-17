@@ -6,7 +6,7 @@
 .background1{
     width: 705px;
     height: 815px;
-    background-color: #F8F8F8;
+    
 }
 .background2{
     background-color:#F8F8F8;
@@ -14,6 +14,7 @@
 height: 815px;
 }
 
+/* Calculation  */
 #calculate{
     text-decoration: none;
     background: #59A5FF;

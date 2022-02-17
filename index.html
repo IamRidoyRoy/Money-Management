@@ -40,9 +40,10 @@
                         <h5>Balance: <span id="balance">00</span></h5> <br>
                     </div>
                     <div>
-                        <p>Save: <input type="text"> % <a id="save" href="">Save</a></p>
-                        <h5>Saving Amount: <span>00</span></h5>
-                        <h5>Remaing Balance: <span>00</span></h5>
+                        <p>Save: <input id="saveInput" value="" type="text"> % <button onclick="saveAmount()" id="save"
+                                href="">Save</button></p>
+                        <h5>Saving Amount: <span id="saving">00</span></h5>
+                        <h5>Remaing Balance: <span id="remaingBalance">00</span></h5>
                     </div> <br>
                     <div class="notify-section">
                         <p id="notify-fail" class="notify">❌ Please give a valid number</p>
