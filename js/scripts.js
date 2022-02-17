@@ -21,20 +21,25 @@ function calculate() {
     }
 
     // Error Message for negative Number
+    const negative = document.getElementById('negative');
+    const lessMoney = document.getElementById('less-money');
     if (income < 0 || food < 0 || rent < 0 || cloth < 0) {
+        negative.style.display = 'block';
         success.style.display = 'none';
-        fail.style.display = 'block';
+        lessMoney.style.display = 'none';
+
 
     }
     else {
-        success.style.display = 'block';
-        fail.style.display = 'none';
-
+        negative.style.display = 'none';
+        lessMoney.style.display = 'none';
+        const totalExpenses = parseFloat(food) + parseFloat(rent) + parseFloat(cloth);
+        expenses.innerText = totalExpenses;
+        const newbalance = parseFloat(income) - totalExpenses;
+        balance.innerText = newbalance;
     }
-    const totalExpenses = parseFloat(food) + parseFloat(rent) + parseFloat(cloth);
-    expenses.innerText = totalExpenses;
-    const newbalance = parseFloat(income) - totalExpenses;
-    balance.innerText = newbalance;
+
+
 }
 
 // Save in percentage 
@@ -50,7 +55,18 @@ function saveAmount() {
     const balance = document.getElementById('balance');
     const remaing = document.getElementById('remaingBalance');
 
-    const remaingBlance = parseFloat(balance.innerText) - savingsAmount;
-    remaing.innerText = remaingBlance;
+    // Error Message if savings is more than balance 
+    const success = document.getElementById('notify-success');
+    const lessMoney = document.getElementById('less-money');
+    if (balance.innerText < savingsAmount) {
+        lessMoney.style.display = 'block';
+        success.style.display = 'none';
+    }
+    else {
+        const remaingBlance = parseFloat(balance.innerText) - savingsAmount;
+        remaing.innerText = remaingBlance;
+        lessMoney.style.display = 'none';
+    }
+
 
 }
